@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 
 import os
 import sys
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # ROOT_PATH = os.path.dirname(__file__)
@@ -29,6 +30,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+AUTHENTICATION_BACKENDS = (
+    'users.views.CustomBackend',
+)
 # Application definition
 
 INSTALLED_APPS = [
@@ -90,7 +95,7 @@ DATABASES = {
         'NAME': "mxonline",
         'USER': 'su',
         'PASSWORD':'123456',
-        'HOST' : '192.168.0.53'
+        'HOST' : '192.168.1.100'
     }
 }
 
