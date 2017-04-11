@@ -90,7 +90,7 @@ DATABASES = {
         'NAME': "mxonline",
         'USER': 'su',
         'PASSWORD':'123456',
-        'HOST' : '192.168.1.100'
+        'HOST' : '192.168.0.53'
     }
 }
 
