@@ -24,5 +24,5 @@ import  xadmin
 urlpatterns = [
     url(r'^xadmin/', xadmin.site.urls),
     url('^$',TemplateView.as_view(template_name="index.html"),name="index"),
-    url('^login/$',LoginView.as_view(),name="login")
+    url('^login/$',LoginView.as_view(),name="login"),
 ]

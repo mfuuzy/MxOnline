@@ -37,8 +37,8 @@ AUTHENTICATION_BACKENDS = (
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
+    # 'django.contrib.admin',
+     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -92,10 +92,10 @@ WSGI_APPLICATION = 'MxOnline.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "mxonline",
+        'NAME': "su1",
         'USER': 'su',
         'PASSWORD':'123456',
-        'HOST' : '192.168.1.100'
+        'HOST' : '192.168.1.10'
     }
 }
 

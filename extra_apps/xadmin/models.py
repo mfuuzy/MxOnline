@@ -12,13 +12,12 @@ from django.utils.encoding import python_2_unicode_compatible, smart_text, smart
 
 from django.db.models.signals import post_migrate
 from django.contrib.auth.models import Permission
-from users.models import UserProfile
 
 import datetime
 import decimal
 from xadmin.util import quote
 
-AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'users.UserProfile')
+AUTH_USER_MODEL = getattr(settings, 'AUTH_USER_MODEL', 'auth.users')
 
 def add_view_permissions(sender, **kwargs):
     """
