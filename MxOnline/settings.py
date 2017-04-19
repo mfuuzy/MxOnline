@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'organization',
     'xadmin',
     'crispy_forms',
+    'captcha',
 ]
 AUTH_USER_MODEL = "users.UserProfile"
 
@@ -92,10 +93,10 @@ WSGI_APPLICATION = 'MxOnline.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "su1",
+        'NAME': "mxonline",
         'USER': 'su',
         'PASSWORD':'123456',
-        'HOST' : '192.168.1.10'
+        'HOST' : '192.168.0.4'
     }
 }
 
@@ -138,3 +139,10 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+
+EMAIL_HOST = "smtp.sina.com"
+EMAIL_POST = 25
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
+EMAIL_USE_TLS = False
+EMAIL_FROM = ""
