@@ -140,9 +140,9 @@ USE_TZ = False
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
-EMAIL_HOST = "smtp.qq.com"
-EMAIL_PORT = 465
-EMAIL_HOST_USER = "uangian@vip.qq.com"
-EMAIL_HOST_PASSWORD = "1208..Uangian"
+EMAIL_HOST = "smtp.sina.com"
+EMAIL_PORT = 25
+EMAIL_HOST_USER = "mfuuzy@sina.com"
+EMAIL_HOST_PASSWORD = "uangian.1208"
 EMAIL_USE_TLS = False
-EMAIL_FROM = "uangian@vip.qq.com"
+EMAIL_FROM = "mfuuzy@sina.com"
